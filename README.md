@@ -8,6 +8,10 @@ My project is application allows you to add new tasks to list, set them as done 
 
 Demo: [Click me!](https://siedemus.github.io/to-do-list-react/)
 
+## App
+
+![ss](public\images\ss.png)
+
 ## Lighthouse
 
 ![lighthouse](public\images\lighthouse.png)
