@@ -15,7 +15,7 @@ const hideDoneTasks = false;
 
 function App() {
   return (
-    <React.Fragment>
+    <>
       <Header title={"Lista Zadań"} />
       <Section
         subHeader={<SubHeader title={"Dodaj nowe zadanie"} />}
@@ -23,7 +23,7 @@ function App() {
         container={<Container title={"Lista Zadań"} buttons={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />} />}
         tasksList={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
-    </React.Fragment>
+    </>
   );
 }
 
