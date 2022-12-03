@@ -15,5 +15,3 @@ const Tasks = ({ tasks, hideDoneTasks }) => {
 };
 
 export default Tasks;
-
-
