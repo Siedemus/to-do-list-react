@@ -1,4 +1,4 @@
-#To Do List
+# To Do List
 
 ![bg](public\images\bg.png)
 
@@ -16,7 +16,7 @@ Demo: [Click me!](https://siedemus.github.io/to-do-list-react/)
 
 ![lighthouse](public\images\lighthouse.png)
 
-#**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
+## **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 ## Available Scripts
 
