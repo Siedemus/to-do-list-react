@@ -10,7 +10,7 @@ My project is application allows you to add new tasks to list, set them as done 
 
 Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
-## 🎮App
+## 🎮App preview
 
 <img src="public\images\ss.png" alt="ss">
 
