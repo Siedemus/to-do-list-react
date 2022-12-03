@@ -1,22 +1,24 @@
-# To Do List
+# 📝To Do List
+
+Created by [Siedemus](https://github.com/Siedemus)
 
 <img src="public\images\bg.png" alt="bg">
 
-## About project
+## 🤔About project
 
 My project is application allows you to add new tasks to list, set them as done and delete each of them. The website is in Polish language.
 
 Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
-## App
+## 🎮App
 
 <img src="public\images\ss.png" alt="ss">
 
-## Lighthouse
+## 🔦Lighthouse
 
 <img src="public\images\lighthouse.png" alt="lighthouse">
 
-## **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
+## **🔥This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 ***Available Scripts***
 
