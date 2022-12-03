@@ -1,4 +1,18 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#To Do List
+
+![bg](to-do-list-react\public\images)
+
+## About project
+
+My project is application allows you to add new tasks to list, set them as done and delete each of them. The website is in Polish language.
+
+Demo: [Click me!](https://siedemus.github.io/to-do-list-react/)
+
+## Lighthouse
+
+![lighthouse](to-do-list-react\public\images\lighthouse.png)
+
+#**This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
 ## Available Scripts
 
