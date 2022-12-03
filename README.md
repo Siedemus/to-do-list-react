@@ -1,6 +1,6 @@
 # To Do List
 
-![bg](\public\images\bg.png)
+<img src="public\images\bg.png" alt="bg">
 
 ## About project
 
@@ -10,11 +10,11 @@ Demo: [Click me!](https://siedemus.github.io/to-do-list-react/)
 
 ## App
 
-![ss](\public\images\ss.png)
+<img src="public\images\ss.png" alt="ss">
 
 ## Lighthouse
 
-![lighthouse](\public\images\lighthouse.png)
+<img src="public\images\lighthouse.png" alt="lighthouse">
 
 ## **This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).**
 
