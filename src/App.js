@@ -20,6 +20,8 @@ function App() {
       <Section
         subHeader={<SubHeader title={"Dodaj nowe zadanie"} />}
         form={<Form title={"Dodaj zadanie"} />}
+      />
+      <Section
         container={<Container title={"Lista Zadań"} buttons={<Buttons tasks={tasks} hideDoneTasks={hideDoneTasks} />} />}
         tasksList={<Tasks tasks={tasks} hideDoneTasks={hideDoneTasks} />}
       />
