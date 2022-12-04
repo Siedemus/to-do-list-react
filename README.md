@@ -10,6 +10,17 @@ My project is application allows you to add new tasks to list, set them as done 
 
 Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
+## ⚙️Technologies I used
+
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Normalise.css
+- Immutability
+- React
+- react-create-app
+
 ## 🎮App preview
 
 <img src="public\images\ss.png" alt="ss">
