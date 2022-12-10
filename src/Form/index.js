@@ -6,7 +6,7 @@ const Form = ({ title, addNewTask }) => {
 
     const onSubmitForm = (event) => {
         event.preventDefault();
-        if(newTaskContent === ""){
+        if (newTaskContent === "") {
             return;
         };
         addNewTask(newTaskContent.trim())
@@ -16,7 +16,12 @@ const Form = ({ title, addNewTask }) => {
     return (
 
         <form className="form" onSubmit={onSubmitForm}>
-            <input className="form__input" placeholder="Co jest do zrobienia?" value={newTaskContent} onChange={({target}) => setNewTaskContent(target.value)}/>
+            <input
+                className="form__input"
+                placeholder="Co jest do zrobienia?"
+                value={newTaskContent}
+                onChange={({ target }) => setNewTaskContent(target.value)}
+            />
             <button className="form__button">{title}</button>
         </form>
     )

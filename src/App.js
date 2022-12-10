@@ -45,7 +45,7 @@ function App() {
       {
         content,
         done: false,
-        id: tasks.length ? tasks[tasks.length -1].id +1 : 1
+        id: tasks.length ? tasks[tasks.length - 1].id + 1 : 1
       },
     ])
   }
@@ -54,12 +54,34 @@ function App() {
     <>
       <Header title={"Lista Zadań"} />
       <Section
-        subHeader={<SubHeader title={"Dodaj nowe zadanie"} />}
-        form={<Form title={"Dodaj zadanie"} addNewTask={addNewTask}/>}
+        subHeader={
+          <SubHeader
+            title={"Dodaj nowe zadanie"}
+          />}
+        form={
+          <Form
+            title={"Dodaj zadanie"}
+            addNewTask={addNewTask}
+          />}
       />
       <Section
-        container={<Container title={"Lista Zadań"} buttons={<Buttons tasks={tasks} hideDone={hideDone} toggleHideDone={toggleHideDone} setAllDone={setAllDone}/>} />}
-        tasksList={<Tasks tasks={tasks} hideDone={hideDone} removeTask={removeTask} toggleTaskDone={toggleTaskDone} />}
+        container={
+          <Container
+            title={"Lista Zadań"}
+            buttons={
+              <Buttons
+                tasks={tasks}
+                hideDone={hideDone}
+                toggleHideDone={toggleHideDone}
+                setAllDone={setAllDone} />}
+          />}
+        tasksList={
+          <Tasks
+            tasks={tasks}
+            hideDone={hideDone}
+            removeTask={removeTask}
+            toggleTaskDone={toggleTaskDone}
+          />}
       />
     </>
   );
