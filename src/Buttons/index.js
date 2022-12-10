@@ -1,11 +1,11 @@
 import React from "react"
 import "./style.css"
 
-const Buttons = ({ tasks, hideDone }) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
     <>
         {tasks.length > 0 && (
             <>
-                <button className="container__button">
+                <button className="container__button" onClick={toggleHideDone}>
                     {hideDone ? "Pokaż " : "Ukryj "}ukończone
                 </button>
                 <button
