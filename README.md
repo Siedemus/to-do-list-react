@@ -6,7 +6,7 @@ Created by [Siedemus](https://github.com/Siedemus)
 
 ## 🤔About project
 
-My project is application allows you to add new tasks to list, set them as done and delete each of them. The website is in Polish language.
+My project is application allows you to add new tasks to list, set them as done, delete each of them and hide done tasks. The website is in Polish language.
 
 Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
@@ -14,7 +14,7 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript ES6+
 - BEM
 - Normalise.css
 - Immutability
