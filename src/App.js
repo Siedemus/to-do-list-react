@@ -4,6 +4,7 @@ import SubHeader from "./SubHeader";
 import Form from "./Form";
 import Container from "./Container";
 import Buttons from "./Buttons";
+import TasksList from "./TasksList";
 
 function App() {
   const tasks = [
@@ -37,6 +38,11 @@ function App() {
                 hideDone={hideDone}
                 tasks={tasks}
               />}
+          />}
+        tasksList={
+          <TasksList
+            tasks={tasks}
+            hideDone={hideDone}
           />}
       />
     </>
