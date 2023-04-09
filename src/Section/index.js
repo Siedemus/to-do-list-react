@@ -1,7 +1,9 @@
 import "./style.css";
 
-const Section = () => (
-    <section className="section"></section>
+const Section = ({subHeader}) => (
+    <section className="section">
+        {subHeader}
+    </section>
 );
 
 export default Section;
