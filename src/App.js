@@ -19,6 +19,10 @@ function App() {
     setHideDone(hideDone => !hideDone)
   };
 
+  const removeTask = (id) => {
+    setTasks(tasks => tasks.filter(task => task.id !== id))
+  };
+
   return (
     <>
       <Header />
@@ -49,6 +53,7 @@ function App() {
           <TasksList
             tasks={tasks}
             hideDone={hideDone}
+            removeTask={removeTask}
           />}
       />
     </>
