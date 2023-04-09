@@ -1,8 +1,9 @@
 import "./style.css";
 
-const Section = ({subHeader}) => (
+const Section = ({subHeader, form}) => (
     <section className="section">
         {subHeader}
+        {form}
     </section>
 );
 
