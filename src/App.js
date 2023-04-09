@@ -5,14 +5,19 @@ import Form from "./Form";
 import Container from "./Container";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
+import { useState } from "react";
 
 function App() {
-  const tasks = [
+  const [tasks, setTasks] = useState([
     { id: 1, content: "Przejść na Reacta", done: true },
     { id: 2, content: "Wypić wodę", done: false },
-  ];
+  ]);
 
-  const hideDone = false;
+  const [hideDone, setHideDone] = useState(false);
+
+  const toggleHideDone = () => {
+    setHideDone(hideDone => !hideDone)
+  };
 
   return (
     <>
@@ -37,6 +42,7 @@ function App() {
               <Buttons
                 hideDone={hideDone}
                 tasks={tasks}
+                toggleHideDone={toggleHideDone}
               />}
           />}
         tasksList={
