@@ -28,6 +28,7 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 ## 🔦Lighthouse
 
 <img src="public\images\lighthouse.png" alt="lighthouse">
+
 ## Available Scripts
 
 In the project directory, you can run:
