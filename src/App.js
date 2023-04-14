@@ -8,10 +8,7 @@ import TasksList from "./TasksList";
 import { useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([
-    { id: 1, content: "Przejść na Reacta", done: true },
-    { id: 2, content: "Wypić wodę", done: false },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const [hideDone, setHideDone] = useState(false);
 
@@ -41,7 +38,7 @@ function App() {
     setTasks(tasks => [
       ...tasks,
       {
-        id: tasks[tasks.length - 1].id + 1,
+        id: !!tasks.length ? tasks[tasks.length - 1].id + 1 : 1,
         content,
         done: false,
       }])
@@ -56,7 +53,7 @@ function App() {
             title={"Dodaj nowe zadanie"}
             extraContent={""}
           />}
-        form={<Form addNewTask={addNewTask}/>}
+        form={<Form addNewTask={addNewTask} />}
       />
       <Section
         container={
