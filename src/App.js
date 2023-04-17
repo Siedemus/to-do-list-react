@@ -5,12 +5,15 @@ import Form from "./Form";
 import Container from "./Container";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
-  const [tasks, setTasks] = useState([]);
-
+  const [tasks, setTasks] = useState(JSON.parse(localStorage.getItem("tasks")) || []);
   const [hideDone, setHideDone] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks))
+  }, [tasks]);
 
   const toggleHideDone = () => {
     setHideDone(hideDone => !hideDone)
