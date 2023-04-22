@@ -20,6 +20,7 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 - Immutability
 - React
 - react-create-app
+- styled-components
 
 ## 🎮App preview
 
