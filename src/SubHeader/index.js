@@ -1,7 +1,7 @@
-import { MiniorHeader } from "./styled";
+import { StyledHeader } from "./styled";
 
 const SubHeader = ({ title, extraContent }) => (
-  <MiniorHeader subHeader={extraContent}>{title}</MiniorHeader>
+  <StyledHeader subHeader={extraContent}>{title}</StyledHeader>
 );
 
 export default SubHeader;

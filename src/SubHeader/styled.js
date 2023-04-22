@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const MiniorHeader = styled.h2`
+const StyledHeader = styled.h2`
   padding: 25px;
   font-size: 25px;
   font-weight: 700;
@@ -16,4 +16,4 @@ const MiniorHeader = styled.h2`
     `}
 `;
 
-export { MiniorHeader };
+export { StyledHeader };
