@@ -1,10 +1,10 @@
-import "./style.css";
+import { StyledContainer } from "./styled";
 
 const Container = ({ subHeader, buttons }) => (
-    <div className="section__container">
+    <StyledContainer>
         {subHeader}
         {buttons}
-    </div>
+    </StyledContainer>
 )
 
 export default Container;
