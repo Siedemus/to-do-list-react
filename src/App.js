@@ -6,6 +6,18 @@ import Container from "./Container";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
 import { useTasks } from "./useTasks";
+import { ThemeProvider } from "styled-components";
+
+const theme = {
+  colors: {
+    teal: "rgb(0, 128, 128)",
+    white: "rgb(255, 255, 255)",
+    grey: "rgb(214, 214, 214)",
+  },
+  breakpoints: {
+    mobile: "767",
+  },
+};
 
 function App() {
   const {
@@ -19,21 +31,18 @@ function App() {
   } = useTasks();
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Header />
       <Section
-        subHeader={<SubHeader title={"Dodaj nowe zadanie"} extraContent={false} />}
+        subHeader={
+          <SubHeader title={"Dodaj nowe zadanie"} extraContent={false} />
+        }
         form={<Form addNewTask={addNewTask} />}
       />
       <Section
         container={
           <Container
-            subHeader={
-              <SubHeader
-                title={"Lista Zadań"}
-                extraContent={true}
-              />
-            }
+            subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
             buttons={
               <Buttons
                 hideDone={hideDone}
@@ -53,7 +62,7 @@ function App() {
           />
         }
       />
-    </>
+    </ThemeProvider>
   );
 }
 

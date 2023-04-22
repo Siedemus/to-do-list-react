@@ -3,11 +3,11 @@ import styled from "styled-components";
 const StyledContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto;
-  background-color: white;
-  border-top: 10px solid rgb(214, 214, 214);
-  border-bottom: 2px solid rgb(214, 214, 214);
+  background-color: ${({theme}) => theme.colors.white};
+  border-top: 10px solid ${({theme}) => theme.colors.grey};
+  border-bottom: 2px solid ${({theme}) => theme.colors.grey};
 
-  @media (max-width: 767px) {
+  @media (max-width: ${({theme}) => theme.breakpoints.mobile}px) {
     grid-template-columns: 1fr;
   }
 `;
