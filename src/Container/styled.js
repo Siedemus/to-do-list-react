@@ -8,9 +8,7 @@ const StyledContainer = styled.div`
   border-bottom: 2px solid rgb(214, 214, 214);
 
   @media (max-width: 767px) {
-    .section__container {
-      grid-template-columns: 1fr;
-    }
+    grid-template-columns: 1fr;
   }
 `;
 

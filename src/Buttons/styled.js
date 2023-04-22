@@ -3,7 +3,7 @@ import styled from "styled-components";
 const ButtonsContainer = styled.div`
   align-self: center;
 
-  .container__buttons {
+  @media (max-width: 767px) {
     display: grid;
     grid-template-columns: 1fr;
   }
