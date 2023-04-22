@@ -52,4 +52,14 @@ const Button = styled.button`
     `}
 `;
 
-export { List, Item, Button };
+const Content = styled.p`
+  word-break: break-all;
+
+  ${({ done }) =>
+    done &&
+    css`
+      text-decoration: line-through;
+    `}
+`;
+
+export { List, Item, Button, Content };

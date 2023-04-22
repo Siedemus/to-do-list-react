@@ -1,7 +1,0 @@
-.list__text {
-    word-break: break-all;
-}
-
-.list__text--done {
-    text-decoration: line-through;
-}
