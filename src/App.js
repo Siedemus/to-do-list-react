@@ -22,7 +22,7 @@ function App() {
     <>
       <Header />
       <Section
-        subHeader={<SubHeader title={"Dodaj nowe zadanie"} extraContent={""} />}
+        subHeader={<SubHeader title={"Dodaj nowe zadanie"} extraContent={false} />}
         form={<Form addNewTask={addNewTask} />}
       />
       <Section
@@ -31,7 +31,7 @@ function App() {
             subHeader={
               <SubHeader
                 title={"Lista Zadań"}
-                extraContent={"section__header--list"}
+                extraContent={true}
               />
             }
             buttons={
