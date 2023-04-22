@@ -1,11 +1,4 @@
 
-
-.list__item {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    border-bottom: 2px solid rgb(214, 214, 214);
-}
-
 .list__text {
     word-break: break-all;
 }
@@ -41,8 +34,4 @@
 
 .list__button-remove:hover {
     background-color: rgb(255, 0, 51);
-}
-
-.list__item--hidden {
-    display: none;
 }
