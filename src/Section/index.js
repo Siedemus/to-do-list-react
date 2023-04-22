@@ -1,12 +1,12 @@
-import "./style.css";
+import { StyledSection } from "./styled";
 
-const Section = ({subHeader, form, container, tasksList}) => (
-    <section className="section">
-        {subHeader}
-        {form}
-        {container}
-        {tasksList}
-    </section>
+const Section = ({ subHeader, form, container, tasksList }) => (
+  <StyledSection>
+    {subHeader}
+    {form}
+    {container}
+    {tasksList}
+  </StyledSection>
 );
 
 export default Section;
