@@ -1,3 +1,6 @@
+import { createGlobalStyle } from "styled-components";
+
+const GlobalStyles = createGlobalStyle`
 html {
   box-sizing: border-box;
 }
@@ -12,3 +15,6 @@ body {
   font-family: 'roboto', sans-serif;
   background-color: rgb(214, 214, 214);
 }
+`;
+
+export { GlobalStyles };
