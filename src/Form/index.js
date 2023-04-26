@@ -11,14 +11,13 @@ const Form = ({ addNewTask }) => {
 
   const onFormSubmit = (event) => {
     event.preventDefault();
-    const trimmedNewTaskContent = newContent.trim();
-    if (!trimmedNewTaskContent) {
-      focusInput();
-      setNewContent("");
-      return;
-    }
 
-    addNewTask(trimmedNewTaskContent);
+    const trimmedNewTaskContent = newContent.trim();
+
+    if (trimmedNewTaskContent) {
+      addNewTask(trimmedNewTaskContent)
+    };
+
     setNewContent("");
     focusInput();
   };
