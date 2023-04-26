@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 const List = styled.ul`
-  background-color: ${({theme}) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.white};
   margin: 0;
   padding: 0;
   padding: 10px;
@@ -10,7 +10,7 @@ const List = styled.ul`
 const Item = styled.li`
   display: grid;
   grid-template-columns: auto 1fr auto;
-  border-bottom: 2px solid ${({theme}) => theme.colors.grey};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
 
   ${({ hidden }) =>
     hidden &&
@@ -27,16 +27,16 @@ const Button = styled.button`
   padding: 10px;
   font-weight: 800;
   border: none;
-  color: ${({theme}) => theme.colors.white};
+  color: ${({ theme }) => theme.colors.white};
+  transition: 1s;
 
   ${({ done }) =>
     done &&
     css`
-      background-color: ${({theme}) => theme.colors.teal};
-      transition: 1s;
+      background-color: ${({ theme }) => theme.colors.teal};
 
       &:hover {
-        background-color: rgb(0, 181, 181);
+        filter: brightness(120%);
       }
     `}
 
@@ -44,10 +44,9 @@ const Button = styled.button`
     remove &&
     css`
       background-color: crimson;
-      transition: 1s;
 
       &:hover {
-        background-color: rgb(255, 0, 51);
+        filter: brightness(120%);
       }
     `}
 `;

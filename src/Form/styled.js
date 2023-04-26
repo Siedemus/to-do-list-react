@@ -25,7 +25,7 @@ const Button = styled.button`
   transition: background 1s, 1s;
 
   &:hover {
-    background-color: rgb(0, 181, 181);
+    filter: brightness(120%);
     transform: scale(1.05);
   }
 

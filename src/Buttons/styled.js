@@ -18,11 +18,11 @@ const Button = styled.button`
   transition: 0.5s;
 
   &:hover {
-    color: rgb(0, 177, 177);
+    filter: brightness(120%);
   }
 
   &:active {
-    color: rgb(0, 78, 78);
+    filter: brightness(140%);
   }
 
   &:disabled {

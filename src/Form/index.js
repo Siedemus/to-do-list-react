@@ -31,7 +31,7 @@ const Form = ({ addNewTask }) => {
           value={newContent}
           placeholder="Co jest do zrobienia?"
         />
-        <Button className="form__button">Dodaj zadanie</Button>
+        <Button>Dodaj zadanie</Button>
       </StyledForm>
     </>
   );
