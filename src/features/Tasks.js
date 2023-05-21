@@ -13,8 +13,6 @@ export const Tasks = () => {
   const { tasks } = useSelector(selectTasks);
 
   const {
-    hideDone,
-    toggleHideDone,
     removeTask,
     toggleTaskDone,
     setAllDone,
@@ -36,9 +34,7 @@ export const Tasks = () => {
             subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
             buttons={
               <Buttons
-                hideDone={hideDone}
-                tasks={tasks}
-                toggleHideDone={toggleHideDone}
+
                 setAllDone={setAllDone}
               />
             }
@@ -46,8 +42,6 @@ export const Tasks = () => {
         }
         tasksList={
           <TasksList
-            tasks={tasks}
-            hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
           />
