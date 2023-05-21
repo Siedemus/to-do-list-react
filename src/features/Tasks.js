@@ -6,10 +6,13 @@ import Container from "../common/Container";
 import Buttons from "./tasks/Buttons";
 import TasksList from "./tasks/TasksList";
 import { useTasks } from "../useTasks";
+import { useSelector } from "react-redux";
+import { selectTasks } from "./tasksSlice";
 
 export const Tasks = () => {
+  const { tasks } = useSelector(selectTasks);
+
   const {
-    tasks,
     hideDone,
     toggleHideDone,
     removeTask,
