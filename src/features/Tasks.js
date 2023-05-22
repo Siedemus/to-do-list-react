@@ -11,7 +11,6 @@ import { selectTasks } from "./tasksSlice";
 
 export const Tasks = () => {
   const {
-    removeTask,
     setAllDone,
     addNewTask,
   } = useTasks();
@@ -31,7 +30,6 @@ export const Tasks = () => {
             subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
             buttons={
               <Buttons
-
                 setAllDone={setAllDone}
               />
             }
@@ -39,7 +37,6 @@ export const Tasks = () => {
         }
         tasksList={
           <TasksList
-            removeTask={removeTask}
           />
         }
       />
