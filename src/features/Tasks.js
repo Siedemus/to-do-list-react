@@ -5,16 +5,8 @@ import Form from "./tasks/Form";
 import Container from "../common/Container";
 import Buttons from "./tasks/Buttons";
 import TasksList from "./tasks/TasksList";
-import { useTasks } from "../useTasks";
-import { useSelector } from "react-redux";
-import { selectTasks } from "./tasksSlice";
 
 export const Tasks = () => {
-  const {
-    setAllDone,
-    addNewTask,
-  } = useTasks();
-
   return (
     <>
       <Header />
@@ -22,23 +14,16 @@ export const Tasks = () => {
         subHeader={
           <SubHeader title={"Dodaj nowe zadanie"} extraContent={false} />
         }
-        form={<Form addNewTask={addNewTask} />}
+        form={<Form />}
       />
       <Section
         container={
           <Container
             subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
-            buttons={
-              <Buttons
-                setAllDone={setAllDone}
-              />
-            }
+            buttons={<Buttons />}
           />
         }
-        tasksList={
-          <TasksList
-          />
-        }
+        tasksList={<TasksList />}
       />
     </>
   );
