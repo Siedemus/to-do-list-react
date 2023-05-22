@@ -12,7 +12,6 @@ import { selectTasks } from "./tasksSlice";
 export const Tasks = () => {
   const {
     removeTask,
-    toggleTaskDone,
     setAllDone,
     addNewTask,
   } = useTasks();
@@ -41,7 +40,6 @@ export const Tasks = () => {
         tasksList={
           <TasksList
             removeTask={removeTask}
-            toggleTaskDone={toggleTaskDone}
           />
         }
       />
