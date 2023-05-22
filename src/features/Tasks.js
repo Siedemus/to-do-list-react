@@ -10,8 +10,6 @@ import { useSelector } from "react-redux";
 import { selectTasks } from "./tasksSlice";
 
 export const Tasks = () => {
-  const { tasks } = useSelector(selectTasks);
-
   const {
     removeTask,
     toggleTaskDone,
