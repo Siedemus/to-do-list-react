@@ -1,10 +1,10 @@
-import Header from "../common/Header";
-import Section from "../common/Section";
-import SubHeader from "../common/SubHeader";
-import Form from "./tasks/Form";
-import Container from "../common/Container";
-import Buttons from "./tasks/Buttons";
-import TasksList from "./tasks/TasksList";
+import Header from "../../common/Header";
+import Section from "../../common/Section";
+import SubHeader from "../../common/SubHeader";
+import Form from "./Form";
+import Container from "../../common/Container";
+import Buttons from "./Buttons";
+import TasksList from "./TasksList";
 
 export const Tasks = () => {
   return (
