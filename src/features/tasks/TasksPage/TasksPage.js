@@ -1,16 +1,16 @@
-import Header from "../../common/Header";
-import Section from "../../common/Section";
-import SubHeader from "../../common/SubHeader";
+import Header from "../../../common/Header";
+import Section from "../../../common/Section";
+import SubHeader from "../../../common/SubHeader";
+import Container from "../../../common/Container";
 import Form from "./Form";
-import Container from "../../common/Container";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
 import FetchButton from "./FetchButton";
 
-const Tasks = () => {
+const TasksPage = () => {
   return (
     <>
-      <Header title={"Lista Zadań"}/>
+      <Header title={"Lista Zadań"} />
       <Section
         title={
           <SubHeader
@@ -41,4 +41,4 @@ const Tasks = () => {
   );
 };
 
-export default Tasks;
+export default TasksPage;
