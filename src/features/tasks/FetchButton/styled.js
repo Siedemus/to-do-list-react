@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledButton = styled.button`
+const StyledButton = styled.button`
   border: none;
   background-color: transparent;
   padding: 15px;
@@ -16,3 +16,25 @@ export const StyledButton = styled.button`
     filter: brightness(140%);
   }
 `;
+
+const StyledLoading = styled.p`
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  color: ${({ theme }) => theme.colors.grey};
+  font-size: 18px;
+  transition: 0.5s;
+  margin-bottom: 0;
+`;
+
+const StyledError = styled.p`
+  border: none;
+  background-color: transparent;
+  padding: 15px;
+  color: crimson;
+  font-size: 18px;
+  transition: 0.5s;
+  margin-bottom: 0;
+`;
+
+export { StyledButton, StyledLoading, StyledError };
