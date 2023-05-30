@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const StyledLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
-  color: black;
+  color: ${({ theme }) => theme.colors.teal};
 
   &:hover {
     text-decoration: underline;
