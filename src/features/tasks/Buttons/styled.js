@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const ButtonsContainer = styled.div`
   align-self: center;
+  
 
   @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
     display: grid;

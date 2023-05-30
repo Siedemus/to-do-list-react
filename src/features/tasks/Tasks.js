@@ -12,13 +12,26 @@ export const Tasks = () => {
     <>
       <Header />
       <Section
-        title={<SubHeader title={"Dodaj nowe zadanie"} extraContent={false} extraBody={<FetchButton/>} />}
+        title={
+          <SubHeader
+            isMajor={true}
+            title={"Dodaj nowe zadanie"}
+            extraContent={false}
+            extraBody={<FetchButton />}
+          />
+        }
         body={<Form />}
       />
       <Section
         body={
           <Container
-            subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
+            subHeader={
+              <SubHeader
+                isMajor={false}
+                title={"Lista Zadań"}
+                extraContent={true}
+              />
+            }
             buttons={<Buttons />}
           />
         }

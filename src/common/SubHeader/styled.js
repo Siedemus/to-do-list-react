@@ -15,9 +15,15 @@ const StyledHeader = styled.h2`
 `;
 
 const HeaderContainer = styled.div`
-  border-bottom: 2px solid ${({theme}) => theme.colors.grey};
+  border-bottom: none;
   display: flex;
   justify-content: space-between;
+
+  ${({ isMajor }) =>
+    isMajor &&
+    css`
+      border-bottom: 2px solid ${({ theme }) => theme.colors.grey};
+    `}
 `;
 
 export { StyledHeader, HeaderContainer };
