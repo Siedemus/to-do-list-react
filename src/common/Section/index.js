@@ -1,11 +1,10 @@
 import { StyledSection } from "./styled";
 
-const Section = ({ subHeader, form, container, tasksList }) => (
+const Section = ({ title, body, extraBody }) => (
   <StyledSection>
-    {subHeader}
-    {form}
-    {container}
-    {tasksList}
+    {title}
+    {body}
+    {extraBody}
   </StyledSection>
 );
 

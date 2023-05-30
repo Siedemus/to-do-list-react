@@ -5,25 +5,24 @@ import Form from "./Form";
 import Container from "../../common/Container";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
+import FetchButton from "./FetchButton";
 
 export const Tasks = () => {
   return (
     <>
       <Header />
       <Section
-        subHeader={
-          <SubHeader title={"Dodaj nowe zadanie"} extraContent={false} />
-        }
-        form={<Form />}
+        title={<SubHeader title={"Dodaj nowe zadanie"} extraContent={false} extraBody={<FetchButton/>} />}
+        body={<Form />}
       />
       <Section
-        container={
+        body={
           <Container
             subHeader={<SubHeader title={"Lista Zadań"} extraContent={true} />}
             buttons={<Buttons />}
           />
         }
-        tasksList={<TasksList />}
+        extraBody={<TasksList />}
       />
     </>
   );
