@@ -1,23 +1,19 @@
 import Section from "../../../../common/Section";
 import SubHeader from "../../../../common/SubHeader";
+import { searchQueryParamName } from "../../searchQueryParamName";
+import { useQueryParameter } from "../../useQueryParameter";
 import { Wrapper, Input } from "./styled";
-import { useLocation, useHistory } from "react-router-dom";
+import { useReplaceQueryParameter } from "../../useReplaceQueryParameter";
 
 export const Search = () => {
-  const location = useLocation();
-  const history = useHistory();
-  const query = new URLSearchParams(location.search).get("szukaj");
+  const query = useQueryParameter(searchQueryParamName);
+  const replaceQueryParameter = useReplaceQueryParameter();
 
   const onInputChange = ({ target }) => {
-    const searchParams = new URLSearchParams(location.search);
-
-    if (target.value.trim() === "") {
-      searchParams.delete("szukaj");
-    } else {
-      searchParams.set("szukaj", target.value);
-    }
-
-    history.push(`${location.pathname}?${searchParams.toString()}`);
+    replaceQueryParameter({
+      key: searchQueryParamName,
+      value: target.value.trim() !== "" ? target.value : undefined,
+    });
   };
 
   return (
