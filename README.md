@@ -27,7 +27,7 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
 ## 🎮App preview
 
-<img src="public\images\ss.png" alt="ss">
+<img src="public\images\animation.gif" alt="animated preview">
 
 ## 🔦Lighthouse
 
