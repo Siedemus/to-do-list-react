@@ -31,7 +31,7 @@ const StyledError = styled.p`
   border: none;
   background-color: transparent;
   padding: 15px;
-  color: crimson;
+  color: ${({ theme }) => theme.colors.crimson};
   font-size: 18px;
   transition: 0.5s;
   margin-bottom: 0;

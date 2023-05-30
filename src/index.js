@@ -12,6 +12,7 @@ const theme = {
     teal: "rgb(0, 128, 128)",
     white: "rgb(255, 255, 255)",
     grey: "rgb(214, 214, 214)",
+    crimson: "crimson",
   },
   breakpoints: {
     mobile: "767",
