@@ -31,7 +31,7 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
 ## 🔦Lighthouse
 
-<img src="public\images\lighthouse.png" alt="lighthouse">
+<img src="public\images\lighthouseV2.png" alt="lighthouse">
 
 ## Available Scripts
 
