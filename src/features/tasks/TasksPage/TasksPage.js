@@ -6,6 +6,7 @@ import Form from "./Form";
 import Buttons from "./Buttons";
 import TasksList from "./TasksList";
 import FetchButton from "./FetchButton";
+import { Search } from "./Search";
 
 const TasksPage = () => {
   return (
@@ -22,6 +23,7 @@ const TasksPage = () => {
         }
         body={<Form />}
       />
+      <Search />
       <Section
         body={
           <Container

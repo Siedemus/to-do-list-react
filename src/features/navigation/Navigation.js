@@ -4,7 +4,7 @@ const Navigation = () => (
   <StyledNav>
     <StyledUl>
       <StyledItem>
-        <StyledLink to="/zadania">Zadania</StyledLink>
+        <StyledLink exact to="/zadania">Zadania</StyledLink>
       </StyledItem>
       <StyledItem>
         <StyledLink to="/autor">Autor</StyledLink>

@@ -1,9 +1,10 @@
 import { StyledContainer } from "./styled";
 
-const Container = ({ subHeader, buttons }) => (
+const Container = ({ subHeader, buttons, body }) => (
   <StyledContainer>
     {subHeader}
     {buttons}
+    {body}
   </StyledContainer>
 );
 

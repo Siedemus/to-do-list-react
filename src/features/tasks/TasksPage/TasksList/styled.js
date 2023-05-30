@@ -1,4 +1,15 @@
 import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 const List = styled.ul`
   background-color: ${({ theme }) => theme.colors.white};
@@ -61,4 +72,4 @@ const Content = styled.p`
     `}
 `;
 
-export { List, Item, Button, Content };
+export { List, Item, Button, Content, StyledLink };
