@@ -14,7 +14,7 @@ const FetchButton = () => {
       ) : loadingStatus === "loading" ? (
         <StyledLoading>Ładowanie...</StyledLoading>
       ) : loadingStatus === "error" ? (
-        <StyledError>Error</StyledError>
+        <StyledError>Error 💥🤯</StyledError>
       ) : null}
     </>
   );
