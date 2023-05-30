@@ -15,12 +15,15 @@ Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 - HTML
 - CSS
 - JavaScript ES6+
-- BEM
 - Normalise.css
 - Immutability
 - React
 - react-create-app
 - styled-components
+- redux
+- redux-saga
+- Local Storage
+- React Router
 
 ## 🎮App preview
 
