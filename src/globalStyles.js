@@ -11,7 +11,7 @@ html {
 
 body {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 100px auto;
   font-family: 'roboto', sans-serif;
   background-color: rgb(214, 214, 214);
 }

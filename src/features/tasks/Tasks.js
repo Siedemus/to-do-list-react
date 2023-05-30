@@ -7,10 +7,10 @@ import Buttons from "./Buttons";
 import TasksList from "./TasksList";
 import FetchButton from "./FetchButton";
 
-export const Tasks = () => {
+const Tasks = () => {
   return (
     <>
-      <Header />
+      <Header title={"Lista Zadań"}/>
       <Section
         title={
           <SubHeader
@@ -40,3 +40,5 @@ export const Tasks = () => {
     </>
   );
 };
+
+export default Tasks;

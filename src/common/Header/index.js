@@ -1,5 +1,5 @@
 import { MainHeader } from "./styled";
 
-const Header = () => <MainHeader>Lista Zadań</MainHeader>;
+const Header = ({title}) => <MainHeader>{title}</MainHeader>;
 
 export default Header;
