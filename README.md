@@ -1,6 +1,6 @@
 # 📝To Do List
 
-Created by [Siedemus](https://github.com/Siedemus)
+Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
 <img src="public\images\bg.png" alt="bg">
 
@@ -11,8 +11,6 @@ My project is application allows you to add new tasks to list, set them as done,
 ## (New Features)
 
 Now you can download example tasks and filter it! That's not all because you can check subpage about autor.
-
-Demo: [**Click me!**](https://siedemus.github.io/to-do-list-react/)
 
 ## ⚙️Technologies I used
 
